@@ -9,15 +9,16 @@
     "version": "v1.4.0",
     "id": "julfor.level_thumbnails",
     "name": "Level Thumbnails",
-    "developer": "cdc",
+    "developer": "Julfor",
     "links":{
         "community": "https://discord.gg/TQvfk2sPq7",
         "source": "https://github.com/thejulfor/level-thumbs-mod"
     },
     "description": "Adds thumbnails to levels in search.",
-    {
-        "dependencies": {
-            "cdc.level_thumbnails": ">=v1.0.0"
+    "incompatibilities": {
+        "cdc.level_thumbnails": {
+            "version": ">=v1.0.0",
+            "importance": "breaking"
         }
     },
 
