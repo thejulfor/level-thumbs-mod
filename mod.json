@@ -7,14 +7,19 @@
         "ios": "2.2074"
     },
     "version": "v1.4.0",
-    "id": "cdc.level_thumbnails",
+    "id": "julfor.level_thumbnails",
     "name": "Level Thumbnails",
     "developer": "cdc",
     "links":{
-        "community": "https://discord.gg/GuagJDsqds",
-        "source": "https://github.com/cdc-sys/level-thumbs-mod"
+        "community": "https://discord.gg/TQvfk2sPq7",
+        "source": "https://github.com/thejulfor/level-thumbs-mod"
     },
     "description": "Adds thumbnails to levels in search.",
+    {
+        "dependencies": {
+            "cdc.level_thumbnails": ">=v1.0.0"
+        }
+    },
 
     "resources": {
         "sprites": [
@@ -58,11 +63,11 @@
         },
         "level-thumbnails-url-new": {
             "name": "Level Thumbnails URL",
-            "description": "This is the url where the mod will fetch the thumbnails. Leave default for original.",
+            "description": "This is the url where the mod will fetch the thumbnails. <cr>Dont change this, this is configured for Stellar GDPS.</c>",
             "type": "string",
             "match": "(http|https):\\/\\/([\\w_-]+(?:(?:\\.[\\w_-]+)+))([\\w.,@?^=%&:\\/~+#-]*[\\w@?^=%&\\/~+#-])",
             "filter": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ:.-_/0123456789",
-            "default": "https://levelthumbs.prevter.me/thumbnail"
+            "default": "https://gdps.julfor.ru/thumbnails"
         },
         "legacy-url":{
             "name":"Legacy URL",
@@ -91,7 +96,7 @@
             "min": 1,
             "max":255,
             "enable-if": "level-bg",
-            "default":100
+            "default":220
         },
         "enable-blur":{
             "name":"Level BG Blur",
